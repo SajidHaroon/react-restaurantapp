@@ -1,5 +1,6 @@
 .App {
   text-align: center;
+  background-color: gray;
 }
 
 .App-logo {
@@ -27,7 +28,40 @@
 .App-link {
   color: #61dafb;
 }
-
+input{
+  margin: 20px;
+  padding: 10px;
+  width: 300px;
+  border: 2px solid black;
+}
+.restaurants {
+  display: flex;
+  margin: 20px;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+.cards {
+  border: 2px solid black;
+  padding: 10px;
+  margin: 10px;
+  width:300px;
+  height: 310px;
+  text-align: center;
+  align-items: flex-start;
+ 
+}
+h1 {
+  padding: 10px;
+  margin: 10px;
+  text-align: center;
+}
+.restaurant{
+  font-weight: bold;
+}
+.restaurants img {
+  width:200px;
+  height: 200px;
+}
 @keyframes App-logo-spin {
   from {
     transform: rotate(0deg);
@@ -36,3 +70,96 @@
     transform: rotate(360deg);
   }
 }
+
+.nav-bar{
+  min-width: 100%;
+  background-color: dodgerblue;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+  color:white;
+  position: sticky;
+  top: 0;
+  /* background-image: url('https://media-cdn.tripadvisor.com/media/photo-s/1a/08/d9/91/salle-du-restaurant.jpg');
+  background-size: cover;
+  opacity: 0.8;*/
+}
+.menu{
+  background-color: white;
+  min-width: 15%;
+  min-height: 50vh;
+  z-index: 10;
+  color: #0d86cb;
+  position: fixed;
+  top: 0;
+  left: 0;
+}
+
+.fa-heart{
+  float: left;
+  cursor: pointer;
+  color: #0d86cb;
+}
+
+/* spinner */
+.loader,
+.loader:after {
+  border-radius: 50%;
+  width: 10em;
+  height: 10em;
+}
+.loader {
+  margin: 60px auto;
+  font-size: 10px;
+  position: relative;
+  text-indent: -9999em;
+  border-top: 1.1em solid rgba(142, 142, 142, 0.2);
+  border-right: 1.1em solid rgba(142, 142, 142, 0.2);
+  border-bottom: 1.1em solid rgba(142, 142, 142, 0.2);
+  border-left: 1.1em solid #1b74c7;
+  -webkit-transform: translateZ(0);
+  -ms-transform: translateZ(0);
+  transform: translateZ(0);
+  -webkit-animation: load8 1.1s infinite linear;
+  animation: load8 1.1s infinite linear;
+}
+@-webkit-keyframes load8 {
+  0% {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+@keyframes load8 {
+  0% {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+
+li {
+  list-style: none;
+}
+
+.navbarbtns {
+  border-radius: 5px;
+  font-size: 1.2rem;
+  height: auto;
+  margin:5px;
+}
+
+
+.searchform {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
