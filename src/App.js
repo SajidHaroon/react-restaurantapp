@@ -18,7 +18,7 @@ const App = () => {
   //const url = `https://famua0f1ql.execute-api.eu-central-1.amazonaws.com/dev/restaurants?searchTerm=${search}&location=helsinki`;
   // After using Yelp Api instructions by Arifa, since the last one may cost because of using AWS, so its better to use PROXY server and use following format
   // After completing Yelp instructions and running proxy at port localhost:3001
-    const url = `http://localhost:3001/restaurants?searchTerm=${search}&location=helsinki`;
+    const url = `https://react-restaurantapp-api.herokuapp.com/restaurants?searchTerm=${search}&location=helsinki`;
     // const url = `/restaurants?searchTerm=${search}&location=helsinki`;
     const response = await axios.get(url);
     console.log("url is ", url);
